@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.photo{
+    position: absolute;
+    top: 76px;
+    left: 111px;
+    width: 125px;
+    height: 128px;
+    border-radius: 50%;
+    border: 5px solid #F4F3F3;
+    z-index: 10;
+}
+.photo img{
+    border-radius: 50%;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card{
+width: 350px;
+height: 373px;
+background: #fff;
+box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+position: relative;
+z-index: 3;
+}
+.card-img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-content{
+padding-top:4.2rem ;
+}
+.card-content h1{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+
+}
+.card-content h1 span{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #594C4C;
+}
+.card-content p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4D3D3D;
+    text-align: center;
+    margin-top: 5px;
+}
+.card-content .line span{
+    display: block;
+    border: 0.6px solid #747171;
+    margin-top:1.6rem ;
+}
+.social{
+    padding-top: 18px;
+display: grid;
+gap: 8px;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.social .hd h1{
+    font-weight: 800;
+font-size: 20px;
+line-height: 25px;
+color: #282323;
+}
+.social .write h1{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #686666;
+}
+@media screen and (max-width:375px) {
+    body{
+        padding: 0 15px;
+    }
+    .card{
+        width: 290px;
+    }
+        .photo{
+            top: 55px;
+            left: 84px;
+        }
+}
